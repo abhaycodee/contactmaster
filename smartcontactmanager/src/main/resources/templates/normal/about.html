@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title >this is about page</title>
+
+<style>
+
+
+</style>
+
+</head>
+<body>
+
+<section class="kk">
+
+<div class="content">
+
+
+<div class="bar"><i class="fas fa-bars m-3" id="we" onclick="toggleSidebar()"></i>
+
+
+</div>
+
+
+
+</div>
+
+<h3 class="hh"><span class="gg" >Welcome to user dashboard</span></h3>
+
+   <div class="sidebar">
+   
+   <span  class="crossbtn"   onclick="toggleSidebar()">&times;</span>
+
+   <a href="" class="item"><i class="fa-sharp fa-solid fa-house-user"></i> Home</a>
+   <a href="" class="item"><i class="fa-sharp fa-solid fa-address-card"></i> View contact</a>
+   <a href="" class="item"><i class="fa-sharp fa-solid fa-address-card"></i> Add contact</a>
+   <a href="" class="item"><i class="fa-solid fa-user"></i> Your profile</a>
+   <a href="" class="item"><i class="fa-solid fa-bars"></i> Settings</a>
+    <a th:href="@{/logout}" class="item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+    <div class="divider"></div>
+    </div>
+
+
+
+
+
+
+</section>
+
+</body>
+</html>
